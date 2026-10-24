@@ -1,0 +1,4 @@
+node_modules
+data
+art/images/*
+!art/images/.gitkeep

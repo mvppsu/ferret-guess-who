@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Ferret Guess Who</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Ferret Guess Who">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#f6efe0">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main id="app">
+
+  <!-- Home -->
+  <section id="screen-home" class="screen center" hidden>
+    <img class="logo" src="/icons/icon-192.png" alt="" width="96" height="96">
+    <h1 class="title">Ferret Guess Who</h1>
+    <p class="sub">Who's hiding behind the bandit mask?</p>
+    <input id="name" class="input" type="text" maxlength="14" placeholder="Your name" autocomplete="off" autocapitalize="words" enterkeyhint="done">
+    <div class="home-row">
+      <div class="home-col">
+        <button id="btn-new" class="btn big">New game</button>
+      </div>
+      <div class="or">or</div>
+      <div class="home-col">
+        <input id="code" class="input code" type="text" maxlength="4" placeholder="CODE" autocomplete="off" autocapitalize="characters" autocorrect="off" spellcheck="false" enterkeyhint="go">
+        <button id="btn-join" class="btn alt">Join game</button>
+      </div>
+    </div>
+    <p id="conn-note" class="note"></p>
+  </section>
+
+  <!-- Waiting room -->
+  <section id="screen-wait" class="screen center" hidden>
+    <p class="sub">Tell your opponent this code:</p>
+    <div id="wait-code" class="codeboxes"></div>
+    <p class="sub" style="margin-top:22px">Waiting for a friend to join…</p>
+    <div class="row"><span class="pill" id="wait-me"></span><span class="pill dim">waiting…</span></div>
+    <button id="btn-cancel" class="btn alt" style="margin-top:26px">Cancel</button>
+  </section>
+
+  <!-- Game: pick secret / play -->
+  <section id="screen-game" class="screen game" hidden>
+    <div id="board-wrap" class="board-wrap"><div id="board" class="board"></div></div>
+    <aside class="panel">
+      <div class="panel-top">
+        <span id="room-pill" class="pill"></span>
+        <span id="count-pill" class="pill"></span>
+        <button id="btn-mute" class="icon-btn" aria-label="Sound on/off">🔊</button>
+      </div>
+      <div id="banner" class="banner"></div>
+      <div id="opp-warn" class="warn" hidden></div>
+      <button id="secret-chip" class="secret" hidden></button>
+      <div class="actions">
+        <button id="btn-lock" class="btn big" hidden>Lock it in</button>
+        <button id="btn-guess" class="btn red" hidden>Guess!</button>
+        <button id="btn-end" class="btn" hidden>End turn</button>
+        <button id="btn-guess-cancel" class="btn alt" hidden>Cancel guess</button>
+      </div>
+      <div class="spacer"></div>
+      <div id="score" class="score"></div>
+      <button id="btn-quit" class="link">Leave game</button>
+    </aside>
+  </section>
+
+  <!-- Overlays -->
+  <div id="modal" class="overlay" hidden>
+    <div class="sheet" id="modal-body"></div>
+  </div>
+
+  <section id="screen-result" class="overlay result" hidden>
+    <div class="confetti" id="confetti"></div>
+    <div class="result-body" id="result-body"></div>
+  </section>
+
+  <div id="toast" class="toast" hidden></div>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

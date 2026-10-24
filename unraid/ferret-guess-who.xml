@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ferret-guess-who</Name>
+  <Repository>ghcr.io/mvppsu/ferret-guess-who:latest</Repository>
+  <Registry>https://ghcr.io/mvppsu/ferret-guess-who</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/mvppsu/ferret-guess-who</Project>
+  <Overview>Ferret Guess Who: a two-player Guess Who game with ferrets, played on two iPads over your home network. Open the WebUI on each iPad and use Add to Home Screen.</Overview>
+  <Category>Games:</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams>--user 99:100</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web port" Target="8080" Default="8080" Mode="tcp" Description="Port the game is served on. Browse to http://UNRAID-IP:PORT on each iPad." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Data (ferret photos)" Target="/data" Default="/mnt/user/appdata/ferret-guess-who" Mode="rw" Description="Holds ferrets.json and an images/ folder with your 30 ferret photos." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ferret-guess-who</Config>
+</Container>

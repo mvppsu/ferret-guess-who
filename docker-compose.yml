@@ -1,0 +1,14 @@
+services:
+  ferret-guess-who:
+    # Published by .github/workflows/docker-publish.yml on every push to main, so
+    # UNRAID's "Add Stack" (Compose Manager) can deploy straight from the GUI. To build
+    # from source instead, replace this line with:  build: .
+    image: ghcr.io/mvppsu/ferret-guess-who:latest
+    container_name: ferret-guess-who
+    restart: unless-stopped
+    user: "99:100"
+    ports:
+      - "8080:8080"
+    volumes:
+      # Put your ferret photos in ./data/images (01-bandit.webp, 02-noodle.webp, ...)
+      - ./data:/data

@@ -1,0 +1,13 @@
+{
+  "name": "ferret-guess-who",
+  "version": "1.0.0",
+  "description": "Two-player Guess Who with ferrets, for two iPads on the same network",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/game.test.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": { "ws": "^8.18.0" }
+}

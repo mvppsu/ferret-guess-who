@@ -1,0 +1,9 @@
+node_modules
+art/images
+art/PROMPTS.md
+mockups
+test
+scripts
+unraid
+.git
+*.md
