@@ -13,6 +13,10 @@ const BUNDLED_ROSTER = path.join(ROOT, 'art', 'ferrets.json');
 // DATA_DIR holds ferrets.json and images/. In Docker it is a mounted volume.
 const DATA_DIR = path.resolve(process.env.DATA_DIR || path.join(ROOT, 'art'));
 const IMAGES_DIR = path.join(DATA_DIR, 'images');
+// Photos shipped inside the image. Files in IMAGES_DIR (the mounted data folder) take priority,
+// so any single ferret can be replaced without rebuilding.
+const BUNDLED_IMAGES = path.join(ROOT, 'art', 'images');
+const IMAGE_DIRS = IMAGES_DIR === BUNDLED_IMAGES ? [IMAGES_DIR] : [IMAGES_DIR, BUNDLED_IMAGES];
 const ROSTER_FILE = path.join(DATA_DIR, 'ferrets.json');
 
 const MAX_ROOMS = 500;
@@ -47,19 +51,27 @@ try {
 // Images are matched by file stem ("01-bandit") or just the id ("01"), any of webp/png/jpg.
 function loadRoster() {
   const raw = JSON.parse(fs.readFileSync(fs.existsSync(ROSTER_FILE) ? ROSTER_FILE : BUNDLED_ROSTER, 'utf8'));
-  const images = new Map();
-  const files = fs.existsSync(IMAGES_DIR) ? fs.readdirSync(IMAGES_DIR) : [];
-  for (const f of files) {
-    const ext = path.extname(f).toLowerCase();
-    if (IMAGE_EXTS.has(ext)) images.set(path.basename(f, path.extname(f)).toLowerCase(), f);
-  }
+  // One stem -> path map per directory, in priority order (the data folder beats the bundled photos).
+  const maps = IMAGE_DIRS.map((dir) => {
+    const m = new Map();
+    if (fs.existsSync(dir)) {
+      for (const f of fs.readdirSync(dir)) {
+        if (IMAGE_EXTS.has(path.extname(f).toLowerCase())) m.set(path.basename(f, path.extname(f)).toLowerCase(), path.join(dir, f));
+      }
+    }
+    return m;
+  });
   const ferrets = raw.ferrets.map((f) => {
     const stem = path.basename(f.file, path.extname(f.file)).toLowerCase();
-    const found = images.get(stem) || images.get(f.id);
+    let found = null;
+    for (const m of maps) {
+      found = m.get(stem) || m.get(f.id);
+      if (found) break;
+    }
     let image = null;
     if (found) {
-      const v = Math.floor(fs.statSync(path.join(IMAGES_DIR, found)).mtimeMs);
-      image = `/images/${encodeURIComponent(found)}?v=${v}`;
+      const v = Math.floor(fs.statSync(found).mtimeMs);
+      image = `/images/${encodeURIComponent(path.basename(found))}?v=${v}`;
     }
     return { id: f.id, name: f.name, coat: f.coat, pose: f.pose, accessory: f.accessory, image };
   });
@@ -317,11 +329,13 @@ const server = http.createServer((req, res) => {
     }
   }
   if (pathname.startsWith('/images/')) {
-    const file = safeJoin(IMAGES_DIR, pathname.slice('/images/'.length));
-    if (!file) {
+    const rel = pathname.slice('/images/'.length);
+    const candidates = IMAGE_DIRS.map((dir) => safeJoin(dir, rel));
+    if (candidates.includes(null)) {
       res.writeHead(403);
       return res.end();
     }
+    const file = candidates.find((c) => fs.existsSync(c)) || candidates[0];
     return sendFile(res, file, 'public, max-age=31536000, immutable');
   }
   const rel = pathname === '/' ? 'index.html' : pathname.slice(1);

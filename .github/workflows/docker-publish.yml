@@ -12,6 +12,7 @@ on:
       - "server.js"
       - "public/**"
       - "art/ferrets.json"
+      - "art/images/**"
       - "package.json"
       - "package-lock.json"
       - "Dockerfile"

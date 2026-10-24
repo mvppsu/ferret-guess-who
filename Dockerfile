@@ -11,8 +11,9 @@ RUN npm ci --omit=dev && npm cache clean --force
 COPY server.js ./
 COPY public ./public
 COPY art/ferrets.json ./art/ferrets.json
+COPY art/images ./art/images
 
-# ferrets.json and images/ live here; mount a host folder to add your ferret photos.
+# Optional: ferrets.json and an images/ folder here override the bundled roster and photos.
 VOLUME /data
 EXPOSE 8080
 

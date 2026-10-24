@@ -4,6 +4,8 @@
 
 ## How to generate (Gemini / Nano Banana)
 
+Shortcut: `python3 scripts/generate_images.py` does all of this through the Gemini API (see the README). The manual steps below work in the Gemini app.
+
 1. Open ONE Gemini chat and use it for all 30 so the look stays consistent. Start by pasting prompt 01.
 2. When you get one you like, say: "Use this exact photo style, backdrop and lighting for every ferret from now on. Keep each one the same size in frame." Then paste prompts 02-30 one at a time.
 3. If a ferret drifts (wrong coat, missing accessory, cropped), reply with the fix ("the fur should be pure white, add the top hat") rather than starting over. Nano Banana edits well.

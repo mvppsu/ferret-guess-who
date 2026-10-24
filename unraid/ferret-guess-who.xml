@@ -22,5 +22,5 @@
   <DonateLink/>
   <Requires/>
   <Config Name="Web port" Target="8080" Default="8080" Mode="tcp" Description="Port the game is served on. Browse to http://UNRAID-IP:PORT on each iPad." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
-  <Config Name="Data (ferret photos)" Target="/data" Default="/mnt/user/appdata/ferret-guess-who" Mode="rw" Description="Holds ferrets.json and an images/ folder with your 30 ferret photos." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ferret-guess-who</Config>
+  <Config Name="Data (ferret photos)" Target="/data" Default="/mnt/user/appdata/ferret-guess-who" Mode="rw" Description="Optional. ferrets.json is copied here on first start; put photos in an images/ subfolder to override the bundled ones." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ferret-guess-who</Config>
 </Container>

@@ -18,17 +18,18 @@ server (WebSockets) in one Docker container; the iPads open it in Safari and add
 Every push to `main` builds and publishes `ghcr.io/mvppsu/ferret-guess-who:latest`
 (see `.github/workflows/docker-publish.yml`), so Unraid never builds anything.
 
-1. **Make the data folder** for your ferret photos (Unraid terminal):
+1. **Make the data folder** (optional but recommended; it is where `ferrets.json` is copied on first start and
+   where you can drop replacement photos):
    ```bash
    mkdir -p /mnt/user/appdata/ferret-guess-who/images && chown -R 99:100 /mnt/user/appdata/ferret-guess-who
    ```
 2. **Add the container.** Fetch the template, then in the **Docker** tab choose **Add Container**, pick
-   `ferret-guess-who` from the template list and click **Apply**:
+   `ferret-guess-who` from the template list. Change only the **Host Port** if 8080 is taken, and click **Apply**:
    ```bash
    curl -o /boot/config/plugins/dockerMan/templates-user/my-ferret-guess-who.xml https://raw.githubusercontent.com/mvppsu/ferret-guess-who/main/unraid/ferret-guess-who.xml
    ```
    (Prefer Compose Manager? Use `docker-compose.yml` with **Add Stack**; it keeps data in `./data`.)
-3. **Copy your photos** into `/mnt/user/appdata/ferret-guess-who/images/` (see below).
+3. The 30 ferret photos are **built into the image**, so there is nothing to copy.
 4. **On each iPad**: open Safari to `http://UNRAID-IP:8080`, tap Share, then **Add to Home Screen**.
    It opens full screen like an app. Tip: set Settings, Display & Brightness, Auto-Lock to a long time while
    playing. If an iPad sleeps the game reconnects automatically when you wake it.
@@ -38,18 +39,23 @@ To update, push to `main`, wait for the GitHub Action to finish, then in the Doc
 
 ## Ferret photos
 
-The 30 prompts are in [`art/PROMPTS.md`](art/PROMPTS.md). Each ferret is looked up by its file name in the
-container's `/data/images/` folder (on Unraid: `/mnt/user/appdata/ferret-guess-who/images/`):
+The 30 photos live in `art/images/` and are baked into the Docker image (about 1 MB), so a fresh container has
+all of them. The prompts that made them are in [`art/PROMPTS.md`](art/PROMPTS.md).
 
-| ferret | file name (any of .webp .png .jpg) |
-|---|---|
-| 01 Bandit | `01-bandit.webp` (or just `01.webp`) |
-| 02 Noodle | `02-noodle.webp` ... and so on |
+- **To change a photo for everyone:** replace the file in `art/images/` (keep its name, e.g. `07-mochi.webp`),
+  commit and push. The GitHub Action rebuilds the image; update the container in Unraid.
+- **To try a photo without rebuilding:** drop a file with the same name (any of `.webp .png .jpg`) into the
+  container's data folder, `/mnt/user/appdata/ferret-guess-who/images/`. Files there override the bundled ones.
+  Images are picked up the next time an iPad opens or reloads the app.
+- Photos are matched by file name: `01-bandit.webp` (or just `01.webp`), `02-noodle.webp`, and so on.
 
-- Missing images show a colored placeholder card listing the ferret's traits, so the game is playable before the art is done.
-- No restart is needed: images are picked up the next time an iPad opens or reloads the app.
+- **Batch-generate with the Gemini API:** `python3 scripts/generate_images.py` makes all 30 for roughly $1
+  (needs an API key from https://aistudio.google.com/apikey with billing enabled; `export GEMINI_API_KEY=...`).
+  Try `--dry-run` first, then `--only 01` to check the look; ferret 01 becomes the style reference for the rest.
+  It skips finished ferrets, retries rate limits, and lists any that fail. See the header of the script for options.
+- Missing images show a colored placeholder card listing the ferret's traits.
 - Square images are best (cards are square). `python3 scripts/prepare_images.py <downloads-folder> [out-folder]`
-  centre-crops to a square, resizes to 800 px and converts to WebP, then lists which ferrets are still missing.
+  centre-crops to a square, resizes to 800 px and converts to WebP (output defaults to `art/images/`), then lists which ferrets are still missing.
 - Names, traits and order live in `/data/ferrets.json` (created from `art/ferrets.json` on first start). Keep ids unique.
   The game works with any number of ferrets; 30 fits the board best (6 x 5 landscape, 5 x 6 portrait).
 

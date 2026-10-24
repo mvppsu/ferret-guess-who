@@ -45,11 +45,13 @@ async function main() {
     // roster + seeding + static
     const roster = await (await fetch(base + '/api/ferrets')).json();
     assert.strictEqual(roster.ferrets.length, 30);
-    assert.strictEqual(roster.ferrets[0].image, null);
+    assert.ok(roster.ferrets[0].image.startsWith('/images/01-bandit.webp?v='), 'bundled photo is used');
+    assert.strictEqual((await fetch(base + roster.ferrets[0].image)).status, 200);
     fs.writeFileSync(path.join(dataDir, 'images', '02.png'), 'x');
     const r2 = await (await fetch(base + '/api/ferrets')).json();
-    assert.ok(r2.ferrets[1].image.startsWith('/images/02.png?v='));
+    assert.ok(r2.ferrets[1].image.startsWith('/images/02.png?v='), 'data-folder image overrides the bundled one');
     assert.strictEqual((await fetch(base + '/images/02.png')).status, 200);
+    assert.strictEqual((await fetch(base + '/images/02-noodle.webp')).status, 200, 'bundled file still reachable');
     assert.strictEqual((await fetch(base + '/')).status, 200);
     assert.notStrictEqual((await fetch(base + '/images/..%2f..%2fserver.js')).status, 200);
     assert.notStrictEqual((await fetch(base + '/..%2fserver.js')).status, 200);
