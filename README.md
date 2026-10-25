@@ -56,7 +56,9 @@ all of them. The prompts that made them are in [`art/PROMPTS.md`](art/PROMPTS.md
 - Missing images show a colored placeholder card listing the ferret's traits.
 - Square images are best (cards are square). `python3 scripts/prepare_images.py <downloads-folder> [out-folder]`
   centre-crops to a square, resizes to 800 px and converts to WebP (output defaults to `art/images/`), then lists which ferrets are still missing.
-- Names, traits and order live in `/data/ferrets.json` (created from `art/ferrets.json` on first start). Keep ids unique.
+- Card order on the board is the order in `art/ferrets.json`. `python3 scripts/arrange_ferrets.py --write` reshuffles it so
+  touching cards never share a pose, coat or accessory, in both landscape and portrait.
+- Names, traits and order live in `/data/ferrets.json` (copied from `art/ferrets.json` on first start; an unedited copy is ignored in favour of the bundled one, so rearrangements still reach you). Keep ids unique.
   The game works with any number of ferrets; 30 fits the board best (6 x 5 landscape, 5 x 6 portrait).
 
 ## Develop locally

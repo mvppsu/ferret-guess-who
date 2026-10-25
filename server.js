@@ -49,8 +49,23 @@ try {
 }
 
 // Images are matched by file stem ("01-bandit") or just the id ("01"), any of webp/png/jpg.
+// An untouched ferrets.json copied into the data folder by an older version only differs in card order;
+// treat that as stale and use the bundled one so new arrangements reach existing installs.
+// A file with any real edit (names, traits, ids, count) always wins.
+function sameIgnoringOrder(a, b) {
+  const norm = (r) => JSON.stringify(r.ferrets.slice().sort((x, y) => String(x.id).localeCompare(String(y.id))));
+  return norm(a) === norm(b);
+}
+
+function readRosterFile() {
+  const bundled = JSON.parse(fs.readFileSync(BUNDLED_ROSTER, 'utf8'));
+  if (!fs.existsSync(ROSTER_FILE) || ROSTER_FILE === BUNDLED_ROSTER) return bundled;
+  const custom = JSON.parse(fs.readFileSync(ROSTER_FILE, 'utf8'));
+  return sameIgnoringOrder(custom, bundled) ? bundled : custom;
+}
+
 function loadRoster() {
-  const raw = JSON.parse(fs.readFileSync(fs.existsSync(ROSTER_FILE) ? ROSTER_FILE : BUNDLED_ROSTER, 'utf8'));
+  const raw = readRosterFile();
   // One stem -> path map per directory, in priority order (the data folder beats the bundled photos).
   const maps = IMAGE_DIRS.map((dir) => {
     const m = new Map();

@@ -45,16 +45,31 @@ async function main() {
     // roster + seeding + static
     const roster = await (await fetch(base + '/api/ferrets')).json();
     assert.strictEqual(roster.ferrets.length, 30);
-    assert.ok(roster.ferrets[0].image.startsWith('/images/01-bandit.webp?v='), 'bundled photo is used');
-    assert.strictEqual((await fetch(base + roster.ferrets[0].image)).status, 200);
+    const byId = (r, id) => r.ferrets.find((f) => f.id === id);
+    assert.ok(byId(roster, '01').image.startsWith('/images/01-bandit.webp?v='), 'bundled photo is used');
+    assert.strictEqual((await fetch(base + byId(roster, '01').image)).status, 200);
     fs.writeFileSync(path.join(dataDir, 'images', '02.png'), 'x');
     const r2 = await (await fetch(base + '/api/ferrets')).json();
-    assert.ok(r2.ferrets[1].image.startsWith('/images/02.png?v='), 'data-folder image overrides the bundled one');
+    assert.ok(byId(r2, '02').image.startsWith('/images/02.png?v='), 'data-folder image overrides the bundled one');
     assert.strictEqual((await fetch(base + '/images/02.png')).status, 200);
     assert.strictEqual((await fetch(base + '/images/02-noodle.webp')).status, 200, 'bundled file still reachable');
     assert.strictEqual((await fetch(base + '/')).status, 200);
     assert.notStrictEqual((await fetch(base + '/images/..%2f..%2fserver.js')).status, 200);
     assert.notStrictEqual((await fetch(base + '/..%2fserver.js')).status, 200);
+
+    // a stale seeded ferrets.json (same content, old order) is ignored; a real edit wins
+    const bundled = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'art', 'ferrets.json'), 'utf8'));
+    const seeded = JSON.parse(fs.readFileSync(path.join(dataDir, 'ferrets.json'), 'utf8'));
+    seeded.ferrets.reverse();
+    fs.writeFileSync(path.join(dataDir, 'ferrets.json'), JSON.stringify(seeded));
+    const r3 = await (await fetch(base + '/api/ferrets')).json();
+    assert.deepStrictEqual(r3.ferrets.map((f) => f.id), bundled.ferrets.map((f) => f.id), 'stale order ignored');
+    seeded.ferrets[0].name = 'Renamed';
+    fs.writeFileSync(path.join(dataDir, 'ferrets.json'), JSON.stringify(seeded));
+    const r4 = await (await fetch(base + '/api/ferrets')).json();
+    assert.strictEqual(r4.ferrets[0].name, 'Renamed', 'customised roster wins');
+    seeded.ferrets[0].name = bundled.ferrets.find((f) => f.id === seeded.ferrets[0].id).name;
+    fs.writeFileSync(path.join(dataDir, 'ferrets.json'), JSON.stringify(seeded));
 
     // lobby
     const a = new Client(), b = new Client();

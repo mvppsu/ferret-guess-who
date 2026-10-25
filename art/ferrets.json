@@ -24,60 +24,6 @@
  },
  "ferrets": [
   {
-   "id": "01",
-   "name": "Bandit",
-   "coat": "sable",
-   "pose": "standing",
-   "accessory": "none",
-   "file": "01-bandit.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, sable coat: warm medium-brown body fur, cream undercoat, dark brown bandit mask, dark brown feet and tail tip, standing upright on its hind legs, front paws held against its chest, looking at the camera, no accessory. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "02",
-   "name": "Noodle",
-   "coat": "albino",
-   "pose": "standing",
-   "accessory": "tophat",
-   "file": "02-noodle.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, albino coat: pure white fur, pink nose, ruby-red eyes, no mask, standing upright on its hind legs, front paws held against its chest, looking at the camera, wearing a tiny black top hat. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "03",
-   "name": "Pickles",
-   "coat": "silver",
-   "pose": "standing",
-   "accessory": "glasses",
-   "file": "03-pickles.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, silver coat: grey fur with white guard hairs, charcoal-grey bandit mask, dark eyes, standing upright on its hind legs, front paws held against its chest, looking at the camera, wearing small round wire-rimmed glasses. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "04",
-   "name": "Biscuit",
-   "coat": "cinnamon",
-   "pose": "standing",
-   "accessory": "bowtie",
-   "file": "04-biscuit.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, cinnamon coat: reddish ginger-brown fur, light tan mask, pinkish-brown nose, standing upright on its hind legs, front paws held against its chest, looking at the camera, wearing a small red bow tie. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "05",
-   "name": "Waffles",
-   "coat": "black",
-   "pose": "standing",
-   "accessory": "scarf",
-   "file": "05-waffles.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, black sable coat: very dark brown-black fur, black bandit mask, dark eyes, standing upright on its hind legs, front paws held against its chest, looking at the camera, wearing a blue knitted scarf. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "06",
-   "name": "Nugget",
-   "coat": "panda",
-   "pose": "standing",
-   "accessory": "bandana",
-   "file": "06-nugget.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, panda coat: pure white head and shoulders, dark brown body and hindquarters, no mask, standing upright on its hind legs, front paws held against its chest, looking at the camera, wearing a yellow polka-dot bandana around its neck. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
    "id": "07",
    "name": "Mochi",
    "coat": "sable",
@@ -85,132 +31,6 @@
    "accessory": "tophat",
    "file": "07-mochi.webp",
    "prompt": "Photorealistic studio photograph of a single domestic ferret, sable coat: warm medium-brown body fur, cream undercoat, dark brown bandit mask, dark brown feet and tail tip, lying flat on its belly, body stretched long, chin resting on the floor, looking at the camera, wearing a tiny black top hat. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "08",
-   "name": "Pretzel",
-   "coat": "albino",
-   "pose": "stretched",
-   "accessory": "glasses",
-   "file": "08-pretzel.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, albino coat: pure white fur, pink nose, ruby-red eyes, no mask, lying flat on its belly, body stretched long, chin resting on the floor, looking at the camera, wearing small round wire-rimmed glasses. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "09",
-   "name": "Tofu",
-   "coat": "silver",
-   "pose": "stretched",
-   "accessory": "bowtie",
-   "file": "09-tofu.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, silver coat: grey fur with white guard hairs, charcoal-grey bandit mask, dark eyes, lying flat on its belly, body stretched long, chin resting on the floor, looking at the camera, wearing a small red bow tie. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "10",
-   "name": "Ziggy",
-   "coat": "cinnamon",
-   "pose": "stretched",
-   "accessory": "scarf",
-   "file": "10-ziggy.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, cinnamon coat: reddish ginger-brown fur, light tan mask, pinkish-brown nose, lying flat on its belly, body stretched long, chin resting on the floor, looking at the camera, wearing a blue knitted scarf. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "11",
-   "name": "Gizmo",
-   "coat": "black",
-   "pose": "stretched",
-   "accessory": "bandana",
-   "file": "11-gizmo.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, black sable coat: very dark brown-black fur, black bandit mask, dark eyes, lying flat on its belly, body stretched long, chin resting on the floor, looking at the camera, wearing a yellow polka-dot bandana around its neck. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "12",
-   "name": "Olive",
-   "coat": "panda",
-   "pose": "stretched",
-   "accessory": "none",
-   "file": "12-olive.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, panda coat: pure white head and shoulders, dark brown body and hindquarters, no mask, lying flat on its belly, body stretched long, chin resting on the floor, looking at the camera, no accessory. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "13",
-   "name": "Peanut",
-   "coat": "sable",
-   "pose": "sleeping",
-   "accessory": "glasses",
-   "file": "13-peanut.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, sable coat: warm medium-brown body fur, cream undercoat, dark brown bandit mask, dark brown feet and tail tip, curled up in a ball fast asleep, eyes closed, wearing small round wire-rimmed glasses. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "14",
-   "name": "Fudge",
-   "coat": "albino",
-   "pose": "sleeping",
-   "accessory": "bowtie",
-   "file": "14-fudge.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, albino coat: pure white fur, pink nose, ruby-red eyes, no mask, curled up in a ball fast asleep, eyes closed, wearing a small red bow tie. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "15",
-   "name": "Sprout",
-   "coat": "silver",
-   "pose": "sleeping",
-   "accessory": "scarf",
-   "file": "15-sprout.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, silver coat: grey fur with white guard hairs, charcoal-grey bandit mask, dark eyes, curled up in a ball fast asleep, eyes closed, wearing a blue knitted scarf. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "16",
-   "name": "Dash",
-   "coat": "cinnamon",
-   "pose": "sleeping",
-   "accessory": "bandana",
-   "file": "16-dash.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, cinnamon coat: reddish ginger-brown fur, light tan mask, pinkish-brown nose, curled up in a ball fast asleep, eyes closed, wearing a yellow polka-dot bandana around its neck. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "17",
-   "name": "Mango",
-   "coat": "black",
-   "pose": "sleeping",
-   "accessory": "none",
-   "file": "17-mango.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, black sable coat: very dark brown-black fur, black bandit mask, dark eyes, curled up in a ball fast asleep, eyes closed, no accessory. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "18",
-   "name": "Pepper",
-   "coat": "panda",
-   "pose": "sleeping",
-   "accessory": "tophat",
-   "file": "18-pepper.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, panda coat: pure white head and shoulders, dark brown body and hindquarters, no mask, curled up in a ball fast asleep, eyes closed, wearing a tiny black top hat. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "19",
-   "name": "Clover",
-   "coat": "sable",
-   "pose": "peeking",
-   "accessory": "bowtie",
-   "file": "19-clover.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, sable coat: warm medium-brown body fur, cream undercoat, dark brown bandit mask, dark brown feet and tail tip, peeking its head and front paws out of a soft grey fabric play tunnel, wearing a small red bow tie. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "20",
-   "name": "Bean",
-   "coat": "albino",
-   "pose": "peeking",
-   "accessory": "scarf",
-   "file": "20-bean.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, albino coat: pure white fur, pink nose, ruby-red eyes, no mask, peeking its head and front paws out of a soft grey fabric play tunnel, wearing a blue knitted scarf. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "21",
-   "name": "Cocoa",
-   "coat": "silver",
-   "pose": "peeking",
-   "accessory": "bandana",
-   "file": "21-cocoa.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, silver coat: grey fur with white guard hairs, charcoal-grey bandit mask, dark eyes, peeking its head and front paws out of a soft grey fabric play tunnel, wearing a yellow polka-dot bandana around its neck. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
   },
   {
    "id": "22",
@@ -222,31 +42,31 @@
    "prompt": "Photorealistic studio photograph of a single domestic ferret, cinnamon coat: reddish ginger-brown fur, light tan mask, pinkish-brown nose, peeking its head and front paws out of a soft grey fabric play tunnel, no accessory. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
   },
   {
-   "id": "23",
-   "name": "Pip",
-   "coat": "black",
-   "pose": "peeking",
+   "id": "02",
+   "name": "Noodle",
+   "coat": "albino",
+   "pose": "standing",
    "accessory": "tophat",
-   "file": "23-pip.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, black sable coat: very dark brown-black fur, black bandit mask, dark eyes, peeking its head and front paws out of a soft grey fabric play tunnel, wearing a tiny black top hat. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+   "file": "02-noodle.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, albino coat: pure white fur, pink nose, ruby-red eyes, no mask, standing upright on its hind legs, front paws held against its chest, looking at the camera, wearing a tiny black top hat. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
   },
   {
-   "id": "24",
-   "name": "Ginger",
-   "coat": "panda",
+   "id": "21",
+   "name": "Cocoa",
+   "coat": "silver",
    "pose": "peeking",
-   "accessory": "glasses",
-   "file": "24-ginger.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, panda coat: pure white head and shoulders, dark brown body and hindquarters, no mask, peeking its head and front paws out of a soft grey fabric play tunnel, wearing small round wire-rimmed glasses. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+   "accessory": "bandana",
+   "file": "21-cocoa.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, silver coat: grey fur with white guard hairs, charcoal-grey bandit mask, dark eyes, peeking its head and front paws out of a soft grey fabric play tunnel, wearing a yellow polka-dot bandana around its neck. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
   },
   {
-   "id": "25",
-   "name": "Maple",
+   "id": "13",
+   "name": "Peanut",
    "coat": "sable",
-   "pose": "pouncing",
-   "accessory": "scarf",
-   "file": "25-maple.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, sable coat: warm medium-brown body fur, cream undercoat, dark brown bandit mask, dark brown feet and tail tip, mid-leap in a playful \"weasel war dance\" pounce, back arched, mouth slightly open, wearing a blue knitted scarf. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+   "pose": "sleeping",
+   "accessory": "glasses",
+   "file": "13-peanut.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, sable coat: warm medium-brown body fur, cream undercoat, dark brown bandit mask, dark brown feet and tail tip, curled up in a ball fast asleep, eyes closed, wearing small round wire-rimmed glasses. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
   },
   {
    "id": "26",
@@ -258,22 +78,13 @@
    "prompt": "Photorealistic studio photograph of a single domestic ferret, albino coat: pure white fur, pink nose, ruby-red eyes, no mask, mid-leap in a playful \"weasel war dance\" pounce, back arched, mouth slightly open, wearing a yellow polka-dot bandana around its neck. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
   },
   {
-   "id": "27",
-   "name": "Cricket",
+   "id": "15",
+   "name": "Sprout",
    "coat": "silver",
-   "pose": "pouncing",
-   "accessory": "none",
-   "file": "27-cricket.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, silver coat: grey fur with white guard hairs, charcoal-grey bandit mask, dark eyes, mid-leap in a playful \"weasel war dance\" pounce, back arched, mouth slightly open, no accessory. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
-  },
-  {
-   "id": "28",
-   "name": "Juniper",
-   "coat": "cinnamon",
-   "pose": "pouncing",
-   "accessory": "tophat",
-   "file": "28-juniper.webp",
-   "prompt": "Photorealistic studio photograph of a single domestic ferret, cinnamon coat: reddish ginger-brown fur, light tan mask, pinkish-brown nose, mid-leap in a playful \"weasel war dance\" pounce, back arched, mouth slightly open, wearing a tiny black top hat. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+   "pose": "sleeping",
+   "accessory": "scarf",
+   "file": "15-sprout.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, silver coat: grey fur with white guard hairs, charcoal-grey bandit mask, dark eyes, curled up in a ball fast asleep, eyes closed, wearing a blue knitted scarf. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
   },
   {
    "id": "29",
@@ -285,6 +96,15 @@
    "prompt": "Photorealistic studio photograph of a single domestic ferret, black sable coat: very dark brown-black fur, black bandit mask, dark eyes, mid-leap in a playful \"weasel war dance\" pounce, back arched, mouth slightly open, wearing small round wire-rimmed glasses. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
   },
   {
+   "id": "10",
+   "name": "Ziggy",
+   "coat": "cinnamon",
+   "pose": "stretched",
+   "accessory": "scarf",
+   "file": "10-ziggy.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, cinnamon coat: reddish ginger-brown fur, light tan mask, pinkish-brown nose, lying flat on its belly, body stretched long, chin resting on the floor, looking at the camera, wearing a blue knitted scarf. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
    "id": "30",
    "name": "Toast",
    "coat": "panda",
@@ -292,6 +112,186 @@
    "accessory": "bowtie",
    "file": "30-toast.webp",
    "prompt": "Photorealistic studio photograph of a single domestic ferret, panda coat: pure white head and shoulders, dark brown body and hindquarters, no mask, mid-leap in a playful \"weasel war dance\" pounce, back arched, mouth slightly open, wearing a small red bow tie. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "23",
+   "name": "Pip",
+   "coat": "black",
+   "pose": "peeking",
+   "accessory": "tophat",
+   "file": "23-pip.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, black sable coat: very dark brown-black fur, black bandit mask, dark eyes, peeking its head and front paws out of a soft grey fabric play tunnel, wearing a tiny black top hat. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "12",
+   "name": "Olive",
+   "coat": "panda",
+   "pose": "stretched",
+   "accessory": "none",
+   "file": "12-olive.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, panda coat: pure white head and shoulders, dark brown body and hindquarters, no mask, lying flat on its belly, body stretched long, chin resting on the floor, looking at the camera, no accessory. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "19",
+   "name": "Clover",
+   "coat": "sable",
+   "pose": "peeking",
+   "accessory": "bowtie",
+   "file": "19-clover.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, sable coat: warm medium-brown body fur, cream undercoat, dark brown bandit mask, dark brown feet and tail tip, peeking its head and front paws out of a soft grey fabric play tunnel, wearing a small red bow tie. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "06",
+   "name": "Nugget",
+   "coat": "panda",
+   "pose": "standing",
+   "accessory": "bandana",
+   "file": "06-nugget.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, panda coat: pure white head and shoulders, dark brown body and hindquarters, no mask, standing upright on its hind legs, front paws held against its chest, looking at the camera, wearing a yellow polka-dot bandana around its neck. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "17",
+   "name": "Mango",
+   "coat": "black",
+   "pose": "sleeping",
+   "accessory": "none",
+   "file": "17-mango.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, black sable coat: very dark brown-black fur, black bandit mask, dark eyes, curled up in a ball fast asleep, eyes closed, no accessory. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "03",
+   "name": "Pickles",
+   "coat": "silver",
+   "pose": "standing",
+   "accessory": "glasses",
+   "file": "03-pickles.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, silver coat: grey fur with white guard hairs, charcoal-grey bandit mask, dark eyes, standing upright on its hind legs, front paws held against its chest, looking at the camera, wearing small round wire-rimmed glasses. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "14",
+   "name": "Fudge",
+   "coat": "albino",
+   "pose": "sleeping",
+   "accessory": "bowtie",
+   "file": "14-fudge.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, albino coat: pure white fur, pink nose, ruby-red eyes, no mask, curled up in a ball fast asleep, eyes closed, wearing a small red bow tie. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "05",
+   "name": "Waffles",
+   "coat": "black",
+   "pose": "standing",
+   "accessory": "scarf",
+   "file": "05-waffles.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, black sable coat: very dark brown-black fur, black bandit mask, dark eyes, standing upright on its hind legs, front paws held against its chest, looking at the camera, wearing a blue knitted scarf. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "28",
+   "name": "Juniper",
+   "coat": "cinnamon",
+   "pose": "pouncing",
+   "accessory": "tophat",
+   "file": "28-juniper.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, cinnamon coat: reddish ginger-brown fur, light tan mask, pinkish-brown nose, mid-leap in a playful \"weasel war dance\" pounce, back arched, mouth slightly open, wearing a tiny black top hat. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "08",
+   "name": "Pretzel",
+   "coat": "albino",
+   "pose": "stretched",
+   "accessory": "glasses",
+   "file": "08-pretzel.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, albino coat: pure white fur, pink nose, ruby-red eyes, no mask, lying flat on its belly, body stretched long, chin resting on the floor, looking at the camera, wearing small round wire-rimmed glasses. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "25",
+   "name": "Maple",
+   "coat": "sable",
+   "pose": "pouncing",
+   "accessory": "scarf",
+   "file": "25-maple.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, sable coat: warm medium-brown body fur, cream undercoat, dark brown bandit mask, dark brown feet and tail tip, mid-leap in a playful \"weasel war dance\" pounce, back arched, mouth slightly open, wearing a blue knitted scarf. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "11",
+   "name": "Gizmo",
+   "coat": "black",
+   "pose": "stretched",
+   "accessory": "bandana",
+   "file": "11-gizmo.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, black sable coat: very dark brown-black fur, black bandit mask, dark eyes, lying flat on its belly, body stretched long, chin resting on the floor, looking at the camera, wearing a yellow polka-dot bandana around its neck. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "27",
+   "name": "Cricket",
+   "coat": "silver",
+   "pose": "pouncing",
+   "accessory": "none",
+   "file": "27-cricket.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, silver coat: grey fur with white guard hairs, charcoal-grey bandit mask, dark eyes, mid-leap in a playful \"weasel war dance\" pounce, back arched, mouth slightly open, no accessory. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "24",
+   "name": "Ginger",
+   "coat": "panda",
+   "pose": "peeking",
+   "accessory": "glasses",
+   "file": "24-ginger.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, panda coat: pure white head and shoulders, dark brown body and hindquarters, no mask, peeking its head and front paws out of a soft grey fabric play tunnel, wearing small round wire-rimmed glasses. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "01",
+   "name": "Bandit",
+   "coat": "sable",
+   "pose": "standing",
+   "accessory": "none",
+   "file": "01-bandit.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, sable coat: warm medium-brown body fur, cream undercoat, dark brown bandit mask, dark brown feet and tail tip, standing upright on its hind legs, front paws held against its chest, looking at the camera, no accessory. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "18",
+   "name": "Pepper",
+   "coat": "panda",
+   "pose": "sleeping",
+   "accessory": "tophat",
+   "file": "18-pepper.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, panda coat: pure white head and shoulders, dark brown body and hindquarters, no mask, curled up in a ball fast asleep, eyes closed, wearing a tiny black top hat. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "04",
+   "name": "Biscuit",
+   "coat": "cinnamon",
+   "pose": "standing",
+   "accessory": "bowtie",
+   "file": "04-biscuit.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, cinnamon coat: reddish ginger-brown fur, light tan mask, pinkish-brown nose, standing upright on its hind legs, front paws held against its chest, looking at the camera, wearing a small red bow tie. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "20",
+   "name": "Bean",
+   "coat": "albino",
+   "pose": "peeking",
+   "accessory": "scarf",
+   "file": "20-bean.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, albino coat: pure white fur, pink nose, ruby-red eyes, no mask, peeking its head and front paws out of a soft grey fabric play tunnel, wearing a blue knitted scarf. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "16",
+   "name": "Dash",
+   "coat": "cinnamon",
+   "pose": "sleeping",
+   "accessory": "bandana",
+   "file": "16-dash.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, cinnamon coat: reddish ginger-brown fur, light tan mask, pinkish-brown nose, curled up in a ball fast asleep, eyes closed, wearing a yellow polka-dot bandana around its neck. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
+  },
+  {
+   "id": "09",
+   "name": "Tofu",
+   "coat": "silver",
+   "pose": "stretched",
+   "accessory": "bowtie",
+   "file": "09-tofu.webp",
+   "prompt": "Photorealistic studio photograph of a single domestic ferret, silver coat: grey fur with white guard hairs, charcoal-grey bandit mask, dark eyes, lying flat on its belly, body stretched long, chin resting on the floor, looking at the camera, wearing a small red bow tie. Entire animal in frame and centered with a little empty space around it, eye-level camera, plain seamless warm-cream backdrop, soft even studio lighting, sharp focus, natural fur detail, cute and friendly. Square 1:1. No text, no watermark, no other animals, no other props."
   }
  ]
 }
